@@ -1,0 +1,82 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+    <% users.forEach(user=>{ %>
+    <h1><%= user.name %></h1>
+    <p> Books I've read <br></p>
+    <p> A summary and a small review for each. Use ISBN number to find it in your local library or anywhere else. I keep adding new books review as I read more, so bookmark the site and check back again in a few months.<br>
+    Please send me an <a id="url-link" href="mailto:<%= user.email %>">e-mail</a>, if you have any questions.</p>
+    
+    <% if (users.length === 1) {%>
+    <a id="newPostBtn" href="/new/<%= user.id  %>">Add a new book review</a>
+    <% } %>
+
+    <br>
+    <br>
+    <div class="navbar"> 
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort by
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="/books/title">Title(z-a)</a>
+          <a class="dropdown-item" href="/books/read_date">Newest</a>
+          <a class="dropdown-item" href="/books/rating">Best</a>
+        </div>
+      </div>
+    </div>
+
+    <ul id="postsList">
+      <% books.forEach(book=> { %>
+        <li>
+          <img id="cover-image" src="<%= book.cover_url  %>" alt="cover page of the book" width="150" height="200"> 
+          <h2>
+            <%=book.title%> - BY <%= book.author %>
+          </h2>
+          <small>
+            ISBN: <%=book.isbn %>
+          </small>
+          <p>
+            <%=book.summary%> <br>
+          Go to <a id="url-link" href="<%= book.amazon_url %>">amazon</a> for the book details.</p>
+          <br>
+          <h2>My review</h2>
+          <p> 
+          <small>Date read: <%= book.read_date %> My rating: <%= book.rating %>/10</small>
+          <%= book.review %>
+          </p>
+          
+          <% if (users.length === 1) {%>
+          <a class="edit" href="/edit/<%= book.isbn %>">Edit</a>
+          <a class="delete" data-toggle="modal" href="#myModal">Delete</a>
+          <% } %>
+          
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Delete book detail and review ?</h4>
+                </div>
+                <div class="modal-body">
+                  <p>On delete, this will remove both the book details and its review permanently. Are you sure, you want to delete it?</p>
+                </div>
+                <div class="modal-footer">
+                  <form role="form" action="/delete/<%= user.id %>/<%= book.isbn %>" method="post">
+                    <button type="submit" class="btn btn-default">Confirm</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </li>
+        <% }); %>
+    </ul>
+  <% }); %>
+</div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,47 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+    <h1>
+      <%= heading %>
+    </h1>
+
+    <% if (locals.review) { %>
+      <form id="editForm" method="post" action="/edit/<%=review.isbn%>">
+        <label for="titleLbl">Title</label>
+        <input type="text" name="title" id="titleLbl" value="<%= review.title %>">
+        <label for="isbnLbl">ISBN</label>
+        <input type="text" name="isbn" id="isbnLbl" value="<%= review.isbn %>">
+        <label for="authorLbl">Author</label>
+        <input type="text" name="author" id="authorLbl" value="<%= review.author %>">
+        <label for="summaryLbl">Summary</label>
+        <textarea name="summary" id="summaryLbl" rows="10"><%= review.summary %></textarea>
+        <label for="coverLbl">Cover URL</label>
+        <input type="text" name="coverUrl" id="coverLbl" value="<%= review.cover_url %>">
+        <label for="amazonLbl">Amazon URL</label>
+        <input type="text" name="amazonUrl" id="amazonLbl" value="<%= review.amazon_url %>">
+        <label for="ratingLbl">Rating</label>
+        <input type="number" name="rating" id="ratingLbl" value="<%=review.rating %>">
+        <label for="reviewLbl">Review</label>
+        <textarea id="content" name="review" id="reviewLbl" rows="10"><%=review.review %></textarea>
+        <button class="full-width" type="submit">
+          <%= submit %>
+        </button>
+      </form>
+      <% } else { %>
+        <form id="newPostForm" method="post" action="/new">
+          <input type="text" name="title" placeholder="Title" required>
+          <input type="text" name="isbn" placeholder="ISBN" required>
+          <input type="text" name="author" placeholder="Author" required>
+          <textarea name="summary" placeholder="Summary" required rows="10"></textarea>
+          <input type="text" name="coverUrl" placeholder="Cover url" required>
+          <input type="text" name="amazonUrl" placeholder="Amazon url" required>
+          <textarea name="review" placeholder="Write the book review" required rows="10"></textarea>
+          <input type="number" name="rating" placeholder="Rating" required>
+          <button class="full-width" type="submit">
+            <%= submit %>
+          </button>
+        </form>
+        <% } %>
+
+</div>
+<%- include('partials/footer.ejs') %>

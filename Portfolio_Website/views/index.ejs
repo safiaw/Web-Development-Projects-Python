@@ -1,0 +1,252 @@
+<%- include('partials/header.ejs') %>
+    <section id="header">
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light ">
+        <div class="container">
+                <a href="#" class="navbar-brand"><img class="myPhoto" src="assets/avatar.jpg" alt="Wahdat's avatar" width="100" height="100" loading="lazy"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                 <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#skills">Skills</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                 </div>
+                </div>
+        </div>
+      </nav>   
+    </section>
+
+    <section id="background-image">
+      <div class="card text-bg-dark">
+        <img src="assets/animated.jpg" class="card-img img-fluid" alt="an animated natural scene">
+        <div class="card-img-overlay px-4 py-8 text-center align-items-center">
+          <h1 class="card-title display-5 fw-bold text-body-emphasis pt-5">Wahdat Safia</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="card-text lead mb-4">I'm a passionate Software Engineer and a lifelong learner!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              
+              <a class="btn btn-primary btn-sm px-2 gap-3" href="mailto:wahdat.safia@gmail.com" role="button">Reach Out</a>
+              <a class="btn btn-primary btn-sm px-2 gap-3" href="https://safiaw.github.io/online-resume/" target="_blank" role="button">My Resume</a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+    <section id="about">
+      <div class="px-4 mt-3 py-4 text-center">
+        <img class="d-block mx-auto mb-4 myPhoto" src="assets/I-3013.jpg" alt="Wahdat Safia passport photo" width="300" height="300">
+        <h2 class="display-5 fw-bold text-body-emphasis">About me</h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">I have 6+ years of full-time experience in a premier research organization (Bhabha Atomic Research Centre or BARC, India). At BARC, I designed and developed ML/AI solutions to solve complex cloud computing problems. I also gained expertise in full-stack development, REST-based interfaces, cloud computing, high-performance computing, evolutionary algorithm, multi-objective optimization, machine learning, and artificial intelligence. In addition, I have experience in building private on-site opensource-based cloud computing infrastructure and systems that provide on-demand computing resources to 8,000+ scientists and engineers.
+            I have completed my undergrad and master's in Computer Science. I am passionate about research and developmental work that solves real-world problems. I am curious and a lifelong learner.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="featurette-divider py-4" />
+
+    
+    <section id="skills">
+      <div class="container px-4 py-4 justify-content-between">
+        <h2 class="pb-2 display-5 fw-bold text-body-emphasis">Skills</h2>
+        <div class="row ">
+          <div class="col-lg-4">
+            <img  class="rounded-circle" width="140" height="140" src="assets/software-dev.jpg" alt="software development demo image">
+            <h3 class="fw-normal py-2">Software Development</h3>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.<span class="more softText"> I am really fond of writing poems describing emotions, nature, different situations a person goes through in life, etc.</span></p>
+            <p><a id="soft" class="btn btn-primary btn-sm readMoreBtn">Read more »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  class="rounded-circle" width="140" height="140" src="assets/web-dev.jpeg" alt="web development demo image">
+            <h3 class="fw-normal py-2">Web Development</h3>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.<span class="more webText"> I am really fond of writing poems describing emotions, nature, different situations a person goes through in life, etc.</span></p>
+            <p><a id="web" class="btn btn-primary btn-sm readMoreBtn">Read more »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  class="rounded-circle" width="140" height="140" src="assets/machine-learning.jpg" alt="machine learning demo image">
+            <h3 class="fw-normal py-2">Machine Learning</h3>
+            <p>And lastly this, the third column of representative placeholder content. This time we have moved on to the third column.<span class="more mlText"> I am really fond of writing poems describing emotions, nature, different situations a person goes through in life, etc.</span></p>
+            <p><a id="ml" class="btn btn-primary btn-sm readMoreBtn">Read more »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+    </section>
+    
+    <hr class="featurette-divider py-4" />
+   
+    <section id="projects"> 
+     <div class="container py-4">
+      <h2 class="pb-2 display-5 fw-bold text-body-emphasis">Projects</h2>
+      <div class="container d-flex flex-row filter-items py-3">
+        <div class="px-4">Filter by</div>
+        <div class="px-2"><a href="#">All</a></div>
+        <div class="px-2">|</div>
+        <div class="px-2"><a href="#">Content website</a></div>
+        <div class="px-2">|</div>
+        <div class="px-2"><a href="#">Utility tools</a></div>
+        <div class="px-2">|</div>
+        <div class="px-2"><a class="filter-link" id="games" href="#projects">Games</a></div>
+        <div class="px-2">|</div>
+        <div class="px-2"><a class="filter-link" id="aiml" href="#projects">AI/ML</a></div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-3 g-4 py-5 projectList">
+        <div id="aimlCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Virtual machine placement algorithm</h5>
+              <p class="card-text">Study and Development of Heuristic-based Algorithm for Virtual Machine Placement in Cloud Computing Environment. In this, I developed a new multi-objective evolutionary algorithm for VM placement problem in cloud computing.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+        <div id="aimlCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Automatic EEG Signal Classification</h5>
+              <p class="card-text">Auotmatic EEG Signal Classification using wavelet transform and neural network. I implemented a classification model using a combined neural network to create a diagnostic technique for detecting neurological disorders in epileptic patients.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+        <div id="aimlCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Watermarking Biomedical Signals</h5>
+              <p class="card-text">I used the digital watermarking technique to ensure the security and authenticity of biomedical data transmitted over a network. I proposed a scheme that used integer wavelet transform to generate a watermark sequence for each patient and embedded the sequence within the patient’s EEG signal.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+        <div id="utltoolsCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">TODO List Application</h5>
+              <p class="card-text">Study and Development of Heuristic-based Algorithm for Virtual Machine Placement in Cloud Computing Environment. In this, I developed a new multi-objective evolutionary algorithm for VM placement problem in cloud computing.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="contentCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Blogging website</h5>
+              <p class="card-text">Auotmatic EEG Signal Classification using wavelet transform and neural network. I implemented a classification model using a combined neural network to create a diagnostic technique for detecting neurological disorders in epileptic patients.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="gamesCol" class="col d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Memory Testing Game</h5>
+              <p class="card-text">I used the digital watermarking technique to ensure the security and authenticity of biomedical data transmitted over a network. I proposed a scheme that used integer wavelet transform to generate a watermark sequence for each patient and embedded the sequence within the patient’s EEG signal.</p>
+            </div>
+            <div class="card-footer">
+              <a href="project.ejs" class="btn btn-primary btn-sm" role="button">View project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      <div class="container py-5" id="featured-3">
+        <h2 class="pb-2 display-5 fw-bold text-body-emphasis">Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Virtual machine placement algorithm</h3>
+            <p>Study and Development of Heuristic-based Algorithm for Virtual Machine Placement in Cloud Computing Environment. I developed a new multi-objective evolutionary algorithm for VM placement problem in cloud computing. The scheduling algorithm enabled optimal resource allocation on hosts, increasing VM placements tenfold over traditional middleware algorithms in the private cloud.</p>
+            <a href="#" class="icon-link">Call to action<svg class="bi"><use xlink:href="#chevron-right"></use></svg></a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Automatic EEG Signal Classification</h3>
+            <p>Auotmatic EEG Signal Classification using wavelet transform and neural network. I implemented a classification model using a combined neural network to create a diagnostic technique for detecting neurological disorders in epileptic patients. The network consisted of two levels of multi-layer perceptron network employing the Levenberg-Marquardt training algorithm. The approach helped attain 97.3% accuracy.</p>
+            <a href="#" class="icon-link">Call to action<svg class="bi"><use xlink:href="#chevron-right"></use></svg></a>
+          </div>
+          <div class="feature col">
+            <h3 class="fs-2 text-body-emphasis">Watermarking Biomedical Signals</h3>
+            <p>I used the digital watermarking technique to ensure the security and authenticity of biomedical data transmitted over a network. I proposed a scheme that used integer wavelet transform to generate a watermark sequence for each patient and embedded the sequence within the patient’s EEG signal. The resultant signal was secure, robust, and capable of blind tamper detection, making it ideal for use in telehealth.</p>
+            <a href="#" class="icon-link">Call to action<svg class="bi"><use xlink:href="#chevron-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    -->
+    </section>
+
+    <hr class="featurette-divider py-4" />
+
+    <section id="hobbies">
+      <div class="container px-4 py-4 ">
+        <h2 class="pb-2 display-5 fw-bold text-body-emphasis mb-5">Hobbies</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140" src="assets/coding.jpg" alt="coding image">
+            <h3 class="fw-normal py-2">Hiking</h3>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p><a class="btn btn-primary btn-sm" href="https://www.alltrails.com/members/wahdat-safia/completed" target="_blank" role="button">View details</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  class="rounded-circle" width="140" height="140" src="assets/cooking.jpg" alt="coding image">
+            <h3 class="fw-normal py-2">Cooking</h3>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-primary btn-sm" href="https://in.pinterest.com/pin/776730266992183046/" target="_blank" role="button">View details</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  class="rounded-circle" width="140" height="140" src="assets/literature.jpg" alt="coding image">
+            <h3 class="fw-normal py-2">Writing poetries</h3>
+            <p>And lastly this, the third column of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-primary btn-sm" href="https://in.pinterest.com/wahdatsafia/creative-writing/" target="_blank" role="button">View deatils</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+          <div class="px-4 py-4 text-center">
+            <h2 class="display-5 fw-bold text-body-emphasis">Reach out</h2>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-2">If you'are interested in problem solving and ready to implement ideas solving problems around the world then let's connect. </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4">
+                <ul class="nav col-md-4 justify-content-center align-items-center d-flex">
+                  <li class="ms-3"><a class="text-body-secondary" href="mailto:wahdat.safia@gmail.com"><img class="bi" height="30" width="30" src="assets/email.svg" alt="email icon"></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/wahdat-safia/"><svg xmlns="http://www.w3.org/2000/svg" class="bi" height="30" width="30" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+                </ul>
+              </div>
+              <p class="lead px-4 mb-2">You can find my work down here</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <ul class="nav col-md-4 justify-content-center align-items-center d-flex mb-4">
+                  <li class="ms-3"><a class="text-body-secondary" href="https://www.researchgate.net/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1 .6-33.6 .8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z"/></svg></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="https://github.com/safiaw/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <%- include('partials/footer.ejs') %>
+    
+    
