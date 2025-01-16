@@ -1,5 +1,5 @@
 # Web-Development-Projects-Python
-This repo contains Full Stack projects using Python language. It also uses HTML, CSS, Javascript, Node and PostgreSQL.
+This repo contains web development projects in Python language.
 
 #### Full-Stack Projects (Used Express.js, Node.js, Bootstrap, EJS, HTML 5, CSS, JavaScript, jQuery, PostgreSQL)
 - **Book review application:** Created a multi-user application to view and read book reviews. Users can search, sort, and filter
